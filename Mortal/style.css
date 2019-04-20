@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Acme');
 .nav-item {
-  padding: 5px 10px;
+
+  margin:  2px 30px;
+  text-align: center;
+}
+.text{
+  font-family: 'Acme', sans-serif;
+}
+
+.nav-item:hover{
+  transform: scale(2);
 }
 .top-header{
   background-color: rgb(6, 7, 20) ;
@@ -16,3 +26,15 @@
 a:link {
   color: black;
 }
+.button-vd{
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+.card-style{
+  padding-top: 70px;
+}
+.tytle-vd{
+  color: black;
+}
+@import url('https://fonts.googleapis.com/css?family=Acme');

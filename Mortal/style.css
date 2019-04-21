@@ -14,7 +14,7 @@
 .top-header{
   background-color: rgb(6, 7, 20) ;
 }
-.carouselHotnews, .News-area{
+.carouselHotnews, .News-area, .related-post-widget{
   margin-top: 40px;
 }
 .single-sidebar-widget{

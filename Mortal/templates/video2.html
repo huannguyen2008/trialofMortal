@@ -7,9 +7,11 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="{{ url_for('static' , filename = 'style.css' ) }}">
+  <link rel="stylesheet" href="style.css">
+
 </head>
 
-<body>
+<body class="bground" style="background-color:black">
   <header class="header">
     <!-- logo and banner -->
     <div class="container">
@@ -22,23 +24,22 @@
     </div>
     <!-- Navbar -->
     <div class="container">
-      <div class="Navbar">
+      <div class="Navbar text" style="background-color: #081110">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-              <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
               <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Audios</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Videos</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+              <li class="nav-item active"><a class="nav-link" href="#">Videos</a></li>
+              <li class="nav-item"><a class="nav-link" href="guide.html">Guide</a></li>
               <li class="nav-item"><a class="nav-login" href="{{ url_for('login') }}">Log in</a></li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
               <input class="form-control mr-sm-2" type="search" placeholder="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              <button class="btn btn-outline-success my-2 my-sm-0 shadow p-2" type="submit">Search</button>
             </form>
           </div>
       </div>
@@ -111,7 +112,7 @@
   <!-- Footer -->
   <!-- Button page-->
   <div class="container button-vd">
-    <a href="video1.html"><button type="button" class="btn btn-outline-dark">Previous Page</button>
+    <a href="video1.html"><button type="button" class="btn btn-light">Previous Page</button>
   </div>
   <footer class="footer-area">
     <!-- Footer Links -->
@@ -120,21 +121,6 @@
         <div class="col-md-2 mb-3">
           <h6 class="text-uppercase font-weight-bold">
             <a href="#!">About us</a>
-          </h6>
-        </div>
-        <div class="col-md-2 mb-3">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="#!">News</a>
-          </h6>
-        </div>
-        <div class="col-md-2 mb-3">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="#!">Audios</a>
-          </h6>
-        </div>
-        <div class="col-md-2 mb-3">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="#!">Videos</a>
           </h6>
         </div>
         <div class="col-md-2 mb-3">

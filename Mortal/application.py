@@ -29,6 +29,14 @@ db = scoped_session(sessionmaker(bind=engine))
 def index():
     return render_template("index.html")
 
+@app.route("/news")
+def news():
+    return render_template("news.html")
+
+@app.route("/video")
+def video():
+    return render_template("video.html")
+
 @app.route("/login")
 def login():
     return render_template("login.html")

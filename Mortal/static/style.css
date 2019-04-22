@@ -1,15 +1,32 @@
 @import url('https://fonts.googleapis.com/css?family=Acme');
+.button-vd{
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+.card-style{
+  padding-top: 80px;
+  padding-bottom: 10px;
+}
 .nav-item {
 
-  margin:  2px 30px;
+  margin:  2px 45px;
   text-align: center;
 }
 .text{
   font-family: 'Acme', sans-serif;
+  color: whitle;
+}
+.bground
+{
+background:url(http://img.cdn.ved.com.vn/web/lmht360/wp-content/uploads/2014/10/Summoners_Rift.jpg);
+background-size:auto;
+background-repeat:no-repeat;
 }
 
 .nav-item:hover{
-  transform: scale(2);
+  transform: scale(1.6);
+  transition: all ease-in-out 300ms;
 }
 .top-header{
   background-color: rgb(6, 7, 20) ;
@@ -26,15 +43,3 @@
 a:link {
   color: black;
 }
-.button-vd{
-  text-align: center;
-  padding-top: 70px;
-  padding-bottom: 100px;
-}
-.card-style{
-  padding-top: 70px;
-}
-.tytle-vd{
-  color: black;
-}
-@import url('https://fonts.googleapis.com/css?family=Acme');

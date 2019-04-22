@@ -53,6 +53,12 @@ def login():
 def sign_up():
     return render_template("sign_up.html")
 
+@app.route("/signout")
+def logout():
+    session["logged_in"] = False
+    session["username"] = None
+    return redirect("/")
+
 @app.route("/signing_up", methods = ["POST"])
 def signing_up():
     name = request.form.get('name')

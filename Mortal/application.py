@@ -33,9 +33,17 @@ def index():
 def news():
     return render_template("news.html")
 
-@app.route("/video")
-def video():
+@app.route("/videos")
+def videos():
     return render_template("video.html")
+
+@app.route("/video1")
+def video1():
+    return render_template("video1.html")
+
+@app.route("/video2")
+def video2():
+    return render_template("video2.html")    
 
 @app.route("/login")
 def login():

@@ -15,7 +15,7 @@
     <div class="container">
       <div class="top-header">
         <div class="row">
-          <div class="col-2"> <a href="index.html"> <img src="{{ url_for('static' , filename = 'logo.jpg' ) }}" class="rounded float-left" height="115px" alt="Logo"> </a> </div>
+          <div class="col-2"> <a href="{{ url_for('index') }}"> <img src="{{ url_for('static' , filename = 'logo.jpg' ) }}" class="rounded float-left" height="115px" alt="Logo"> </a> </div>
           <div class="col-6"> <img src="{{ url_for('static' , filename = 'add.png' ) }}" width="auto" height="90px" alt=""> </div>
         </div>
       </div>
@@ -29,11 +29,9 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-              <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
-              <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Audios</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Videos</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+              <li class="nav-item active"><a class="nav-link" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="{{ url_for('news') }}">News</a></li>
+              <li class="nav-item"><a class="nav-link" href="{{ url_for('videos') }}">Videos</a></li>
               <li class="nav-item"><a class="nav-login" href="{{ url_for('login') }}">Log in</a></li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -61,7 +59,7 @@
         <div class="hot-news-list">
           <div class="single-post-list">
             <div class="thumb">
-              <img class="card-img rounded-0" src="img/news/post3.jpg" alt="">
+              <img class="card-img rounded-0" src="{{ url_for('static' , filename = 'post3.jpg' ) }}" alt="">
               <div class="info">
                 <i class="fa fa-calendar"></i> April 16, 2019 |
                 <i class="fa fa-user-secret"></i> By Huan Nguyen
@@ -75,7 +73,7 @@
           </div>
           <div class="single-post-list">
             <div class="thumb">
-              <img class="card-img rounded-0" src="img/news/post4.jpg" alt="">
+              <img class="card-img rounded-0" src="{{ url_for('static' , filename = 'post4.jpg' ) }}" alt="">
               <div class="info">
                 <i class="fa fa-calendar"></i> April 16, 2019 |
                 <i class="fa fa-user-secret"></i> By Dan Nguyen
@@ -95,7 +93,7 @@
         <div class="related-post-list">
           <div class="single-post-list">
             <div class="thumb">
-              <img class="card-img rounded-0" src="img/news/post1.jpg" alt="">
+              <img class="card-img rounded-0" src="{{ url_for('static' , filename = 'post1.jpg' ) }}" alt="">
               <div class="info">
                 <i class="fa fa-calendar"></i> April 16, 2019 |
                 <i class="fa fa-user-secret"></i> By Trung Dũng
@@ -109,7 +107,7 @@
           </div>
           <div class="single-post-list">
             <div class="thumb">
-              <img class="card-img rounded-0" src="img/news/post2.jpg" alt="">
+              <img class="card-img rounded-0" src="{{ url_for('static' , filename = 'post2.jpg' ) }}" alt="">
               <div class="info">
                 <i class="fa fa-calendar"></i> April 16, 2019 |
                 <i class="fa fa-user-secret"></i> By Phạm Giang

@@ -4,6 +4,10 @@ from flask import Flask, session,render_template, request, redirect, jsonify
 from flask_session import Session
 from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
+from flask import Flask, request, redirect, url_for, send_from_directory
+
+UPLOAD_FOLDER = '/home/me/Desktop/projects/flask/uploads'
+ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'])
 
 app = Flask(__name__)
 
@@ -27,7 +31,7 @@ def index():
 
 @app.route("/login")
 def login():
-    return render_template("index.html"
+    return render_template("login.html")
 
 @app.route("/sign_up")
 def sign_up():
